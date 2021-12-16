@@ -1,0 +1,26 @@
+
+ALGORITHM Checkpoint Data Structure part 2
+VAR
+    array_arr1 : ARRAY_OF type[INTEGER];
+    array_arr2 : ARRAY_OF type[INTEGER];
+    i,j ,SUM : INTEGER
+
+BEGIN
+    FOR i FROM 0 TO arr1.length -1  DO
+        FOR j FROM 0 TO arr2.length -1 DO
+            IF (arr1[i] == arr2[j]) THEN
+                sum = sum + arr[i] *2
+            END_IF
+        END_FOR
+    END_FOR
+
+    FOR i FROM 0 TO arr1.length   DO
+        FOR j FROM 0 TO arr2.length  DO
+            IF (arr1[i] !== arr2[j]) THEN
+                sum = sum + arr1[i] + arr2[j]
+            END_IF
+        END_FOR
+    END_FOR
+END
+
+
